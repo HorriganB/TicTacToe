@@ -11,26 +11,26 @@ public class ttt {
 		boolean WIN = false;
 		char[] board = new char[10];
 		for(int i = 1; i < 10; i++){
-			board[i] = Character.toChars(i);
+			board[i] = Integer.toString(i).charAt(0);
 		}
 		/*Checks horizontal*/
-		if((board[1] == board[2]) && (board[2] == var3))
+		if((board[1] == board[2]) && (board[2] == board[3]))
 			WIN = true;
-		if((var4 == var5) && (var5 == var6))
+		if((board[4] == board[5]) && (board[5] == board[6]))
 			WIN = true;
-		if((var7 == var8) && (var8 == var9))
+		if((board[7] == board[8]) && (board[8] == board[9]))
 			WIN = true;
 		/*Checks vertical*/
-		if((var1 == var4) && (var4 == var7))
+		if((board[1] == board[4]) && (board[4] == board[7]))
 			WIN = true;
-		if((var2 == var5) && (var5 == var8))
+		if((board[2] == board[5]) && (board[5] == board[8]))
 			WIN = true;
-		if((var3 == var6) && (var8 == var9))
+		if((board[3] == board[6]) && (board[6] == board[9]))
 			WIN = true;
 		/*Checks diagonal*/
-		if((var1 == var5) && (var5 == var9))
+		if((board[1] == board[5]) && (board[5] == board[9]))
 			WIN = true;
-		if((var3 == var5) && (var5 == var7))
+		if((board[3] == board[5]) && (board[5] == board[7]))
 			WIN = true;
 		
 		
@@ -44,17 +44,17 @@ public class ttt {
 		
 		
 		System.out.println("Let's Get Ready To Rumble!");
-		System.out.print("["+ var1);
-		System.out.print("]["+ var2);
-		System.out.print("]["+ var3);
+		System.out.print("["+ board[1]);
+		System.out.print("]["+ board[2]);
+		System.out.print("]["+ board[3]);
 		System.out.println("]");
-		System.out.print("["+ var4);
-		System.out.print("]["+ var5);
-		System.out.print("]["+ var6);
+		System.out.print("["+ board[4]);
+		System.out.print("]["+ board[5]);
+		System.out.print("]["+ board[6]);
 		System.out.println("]");
-		System.out.print("["+ var7);
-		System.out.print("]["+ var8);
-		System.out.print("]["+ var9);
+		System.out.print("["+ board[7]);
+		System.out.print("]["+ board[8]);
+		System.out.print("]["+ board[9]);
 		System.out.println("]");
 		
 		//switch players
