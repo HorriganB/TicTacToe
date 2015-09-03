@@ -39,10 +39,12 @@ public class ttt {
 		
 		
 		if(WIN == true)
-			System.out.println("You Won");
+			System.out.println("You Won")
+			;
+		
 			
 		
-		
+		while {
 		System.out.println("Let's Get Ready To Rumble!");
 		System.out.print("["+ board[1]);
 		System.out.print("]["+ board[2]);
@@ -56,7 +58,7 @@ public class ttt {
 		System.out.print("]["+ board[8]);
 		System.out.print("]["+ board[9]);
 		System.out.println("]");
-		
+		}
 		//switch players
 	}
 }
