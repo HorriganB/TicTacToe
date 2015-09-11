@@ -4,9 +4,9 @@ public class ttt {
 
 /**
  * Main Function
- * Creating boolean player
- * Creating char Board Array
- * While loop gives the pseudo code for the game and changes the player every time
+ * Creating boolean = player, decides who is playing
+ * Creating char Board Array, creates game board
+ * While loop gives decides  for the game and changes the player every time
  * @param args
  */
 	public static void main(String[] args) {
@@ -20,15 +20,10 @@ public class ttt {
 			printBoard(board);
 			takeMove(board, player);
 			player = !player;
-		} 
-/**
- * Close While loop
- */
-	}
-/**
- *  Closes main method
- */
-/**
+		} //closes while loop
+	}//closes main method
+/**Checks to see if there is a winner, in every direction possible. If there is a winner it returns false, 
+ * which tells the game that someone won. 
  * 
  * @param board
  * @return
@@ -69,7 +64,8 @@ public class ttt {
 			return false;
 		}
 		return true;
-	}// Closes Winner MEthod
+	}// Closes Winner Method
+/**Prints out the entire board one row at a time. **/
 
 	public static void printBoard(char[] board) {
 		System.out.println("Let's Get Ready To Rumble!");
@@ -86,6 +82,9 @@ public class ttt {
 		System.out.print("][" + board[9]);
 		System.out.println("]");
 	}// Closes printBoard Method
+/**Checks if the boolean player is true or false, then changes the space to X or O accordingly.
+*Also prints out whose turn it is. 
+*/
 
 	public static void takeMove(char[] board, boolean player) {
 		Scanner in = new Scanner(System.in);
